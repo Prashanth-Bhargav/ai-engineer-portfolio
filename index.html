@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of an AI/ML Engineer specializing in Generative AI, RAG, Computer Vision and Edge AI.">
+  <title>Prashanth Bhargav | AI Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">PB<span>.</span></a>
+
+      <button class="menu-toggle" aria-label="Open navigation"
+              aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="resume-btn" href="assets/resume.pdf" target="_blank" rel="noopener">Resume ↗</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero section container">
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span class="status-dot"></span> AI · GenAI · Computer Vision</p>
+        <p class="intro">Hello, I'm</p>
+        <h1>Prashanth <span>Bhargav</span></h1>
+        <h2>I'm an <span class="typing-text">AI Engineer</span><span class="typing-cursor">|</span></h2>
+        <p class="hero-description">
+          I build practical AI applications that turn data into useful,
+          intelligent solutions — from computer vision and edge AI to
+          retrieval-augmented generation and LLM-powered applications.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Explore My Work <span>↗</span></a>
+          <a href="#contact" class="btn btn-outline">Let's Connect</a>
+        </div>
+
+        <div class="hero-meta">
+          <span><strong>2.7 yrs</strong> AI/ML experience</span>
+          <span><strong>4+ yrs</strong> Engineering experience</span>
+          <span><strong>CV + GenAI</strong> Focus areas</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="profile-frame">
+          <img src="assets/profile.jpg" alt="Prashanth Bhargav"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+          <div class="profile-placeholder" aria-label="Profile placeholder">PB<span>.</span></div>
+        </div>
+        <div class="floating-card floating-card-top">
+          <span class="card-icon">⌘</span>
+          <div><strong>AI Engineering</strong><small>Build · Evaluate · Deploy</small></div>
+        </div>
+        <div class="floating-card floating-card-bottom">
+          <span class="card-icon">✳</span>
+          <div><strong>GenAI + Vision</strong><small>From models to applications</small></div>
+        </div>
+        <div class="visual-glow"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">GET TO KNOW ME</p>
+          <h2>About <span>Me</span></h2>
+          <p>A practical engineering mindset, applied to intelligent systems.</p>
+        </div>
+
+        <div class="about-content">
+          <article class="about-text reveal">
+            <h3>Building AI that solves real problems.</h3>
+            <p>
+              I'm an AI/ML engineer with 2+ years of experience building and deploying production-grade computer vision systems. 
+              At DigiTele Networks, I built GPU-accelerated drone inspection pipelines using PyTorch, YOLO, Faster R-CNN, and SAM, 
+              reaching around 80% mAP on wind turbine inspection. I also developed multispectral drone surveillance models using RGB 
+              and thermal imagery for day and night intrusion detection, with about 75-80% mAP. I used Ray for distributed inference, 
+              served models through Flask APIs and Docker, and optimized YOLOv5 for edge hardware with ONNX and INT8 quantization, 
+              cutting model size by about 75%.
+            </p>
+            <p>
+              On the GenAI side, I built DocSense, a hybrid-retrieval RAG chatbot deployed on Azure Container Apps with Azure OpenAI, 
+              a loan assessment system that pairs XGBoost and SHAP explanations with a policy-grounded RAG pipeline. I also built Jarvis, 
+              a voice assistant on a Raspberry Pi that uses LangGraph to call tools like web search and GPIO device control. 
+              My earlier background in embedded systems and hardware testing is why I care about systems that run reliably in production, 
+              not just in a notebook.
+            </p>
+            <p class="note">
+              Project details on this portfolio are summarized for public viewing.
+              Any demo data or recreated implementation will be clearly identified.
+            </p>
+          </article>
+
+          <div class="about-details reveal">
+            <div class="detail-card">
+              <span class="detail-icon">⌘</span>
+              <div><h3>Computer Vision</h3><p>Detection, segmentation, image analysis</p></div>
+            </div>
+            <div class="detail-card">
+              <span class="detail-icon">✳</span>
+              <div><h3>Generative AI</h3><p>RAG, embeddings, retrieval, LLM apps</p></div>
+            </div>
+            <div class="detail-card">
+              <span class="detail-icon">⚙</span>
+              <div><h3>Model Deployment</h3><p>APIs, Docker, ONNX, edge inference</p></div>
+            </div>
+            <div class="detail-card">
+              <span class="detail-icon">⌁</span>
+              <div><h3>Engineering</h3><p>Python, data pipelines, system integration</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">MY TOOLKIT</p>
+          <h2>Technical <span>Skills</span></h2>
+          <p>Tools I use to build and ship AI systems.</p>
+        </div>
+
+        <div class="skills-container">
+          <article class="skill-card reveal">
+            <div class="skill-card-heading"><span>01</span><h3>Programming & Data</h3></div>
+            <div class="skill-tags">
+              <span>Python</span><span>SQL</span><span>Pandas</span>
+              <span>NumPy</span><span>OpenCV</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-heading"><span>02</span><h3>Machine Learning & CV</h3></div>
+            <div class="skill-tags">
+              <span>PyTorch</span><span>YOLO</span><span>Faster R-CNN</span><span>SAM</span>
+              <span>Object Detection</span><span>Image Segmentation</span><span>TFLite</span>
+              <span>Scikit-learn</span><span>XGBoost</span><span>ONNX</span>
+            </div>
+
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-heading"><span>03</span><h3>GenAI & RAG</h3></div>
+            <div class="skill-tags">
+                <span>LLMs</span><span>RAG</span><span>Hybrid Retrieval</span>
+                <span>LangChain</span><span>LangGraph</span><span>Agentic Workflows</span>
+                <span>Tool Calling</span><span>Prompt Engineering</span><span>Embeddings</span>
+                <span>Azure OpenAI</span><span>ChromaDB</span><span>BM25</span>
+                <span>Docling</span><span>HuggingFace</span>
+            </div>
+
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-heading"><span>04</span><h3>Backend & Deployment</h3></div>
+            <div class="skill-tags">
+                <span>FastAPI</span><span>Flask</span><span>REST APIs</span>
+                <span>Docker</span><span>Ray</span><span>Azure Container Apps</span>
+                <span>Azure Blob Storage</span><span>MongoDB</span><span>Git</span>
+                <span>MLflow</span><span>LangSmith</span>
+            </div>
+          </article>
+        </div>
+        <p class="skills-footnote">Skill tags represent tools and concepts used or explored; depth of experience varies by technology.</p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Featured <span>Projects</span></h2>
+          <p>Computer vision, GenAI, and end-to-end AI applications.</p>
+        </div>
+
+        <div class="project-filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter-btn filter-active" data-filter="all" aria-pressed="true">All Projects</button>
+          <button class="filter-btn" data-filter="vision" aria-pressed="false">Computer Vision</button>
+          <button class="filter-btn" data-filter="genai" aria-pressed="false">GenAI & RAG</button>
+          <button class="filter-btn" data-filter="other" aria-pressed="false">Other AI</button>
+        </div>
+
+        <div class="projects-container">
+          <article class="project-card reveal" data-category="vision">
+            <div class="project-art art-vision">
+              <span class="art-label">COMPUTER VISION</span>
+              <span class="art-caption">Detection · Segmentation · Severity</span>
+            </div>
+            <div class="project-info">
+              <img
+                src="assets/wind-turbine-inspection.png"
+                alt="Wind turbine blade inspection with detected defects"
+                class="project-image"
+                loading="lazy"
+              />
+              <p class="project-type">01 / COMPUTER VISION</p>
+              <h3>Wind Turbine Blade Inspection</h3>
+              <p>
+                A computer vision pipeline for drone-based wind turbine blade inspection. 
+                It detects defects using YOLO and PyTorch, estimates real-world defect size with SAM and camera metadata, 
+                and assigns severity based on defect type.
+              </p>
+              <div class="tech-tags"><span>YOLO</span><span>Faster R-CNN</span><span>SAM</span><span>Flask</span></div>
+              <div class="project-links">
+                <a href="#contact">Request project details ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="vision">
+            <div class="project-art art-edge">
+              <span class="art-label">EDGE AI</span>
+              <span class="art-caption">Thermal + RGB · On-device inference</span>
+            </div>
+            <div class="project-info">
+              <img
+                src="assets/thermal-rgb-demo.png"
+                alt="Synthetic thermal and RGB person detection with bounding boxes"
+                class="project-image"
+                loading="lazy"
+              />
+              <p class="project-type">02 / EDGE AI</p>
+              <h3>Drone Surveillance</h3>
+              <p>
+                Person detection using thermal and RGB imagery, with model
+                export and optimization workflows designed for edge inference.
+              </p>
+              <div class="tech-tags"><span>YOLO</span><span>PyTorch</span><span>ONNX</span><span>ONNX Runtime</span><span>TFLite</span></div>
+              <div class="project-links"><a href="#contact">Request project details ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="genai">
+            <div class="project-art art-loan">
+              <span class="art-label">MACHINE LEARNING + RAG</span>
+              
+              <span class="art-caption">Risk signals · Policy retrieval</span>
+            </div>
+            <div class="project-info">
+              <img
+                src="assets/loan-assessment.png"
+                alt="Loan assessment AI showing prediction and SHAP explanation"
+                class="project-image"
+                loading="lazy"
+              />
+              <p class="project-type">03 / GENAI + ML</p>
+              <h3>Loan Assessment AI</h3>
+              <p>
+                A loan prediction workflow combining a classification model,
+                model explainability, and policy question answering through
+                retrieval-augmented generation.
+              </p>
+              <div class="tech-tags"><span>XGBoost</span><span>SHAP</span><span>ChromaDB</span><span>BM25</span><span>Gemini API</span></div>
+              <div class="project-links"><a href="#contact">Discuss this project ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="genai">
+            <div class="project-art art-docsense">
+              <span class="art-label">DOCUMENT INTELLIGENCE</span>
+              
+              <span class="art-caption">Hybrid search · Grounded answers</span>
+            </div>
+            <div class="project-info">
+              <img
+                src="assets/docsense.png"
+                alt="DocSense document question answering chatbot interface"
+                class="project-image"
+                loading="lazy"
+              />
+              <p class="project-type">04 / RAG APPLICATION</p>
+              <h3>DocSense — Azure Document Q&A</h3>
+              <p>
+                A RAG chatbot deployed on Azure Container Apps. PDFs are parsed
+                and chunked with Docling, then retrieved using hybrid vector and
+                BM25 search. Answers are generated with Azure OpenAI, served
+                through a FastAPI upload and query API, and backed by Azure Blob
+                Storage for documents.
+              </p>
+              <div class="tech-tags"><span>Azure OpenAI</span><span>Azure Container Apps</span><span>Azure Blob Storage</span><span>LangChain</span><span>ChromaDB</span><span>BM25</span><span>Docling</span><span>FastAPI</span></div>
+              <div class="project-links"><a href="#contact">Discuss this project ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="vision">
+            <div class="project-art art-anpr">
+              <span class="art-label">OCR + COMPUTER VISION</span>
+              
+              <span class="art-caption">Vehicle detection · Text recognition</span>
+            </div>
+            <div class="project-info">
+              <img
+                src="assets/anpr.png"
+                alt="Number plate detection with recognized plate text"
+                class="project-image"
+                loading="lazy"
+              />
+              <p class="project-type">05 / COMPUTER VISION</p>
+              <h3>Automatic Number Plate Recognition</h3>
+              <p>
+                A pipeline combining vehicle or number-plate detection with
+                optical character recognition to extract plate text.
+              </p>
+              <div class="tech-tags"><span>YOLOv8</span><span>PaddleOCR</span><span>FastAPI</span><span>OpenCV</span></div>
+              <div class="project-links"><a href="#contact">Discuss this project ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="other">
+            <div class="project-art art-kira">
+              <span class="art-label">PERSONAL PROJECT</span>
+              
+              <span class="art-caption">Voice · Tools · Raspberry Pi</span>
+            </div>
+            <div class="project-info">
+              <img
+                src="assets/jarvis-assistant.png"
+                alt="Raspberry Pi voice assistant controlling smart devices"
+                class="project-image"
+                loading="lazy"
+              />
+              <p class="project-type">06 / VOICE ASSISTANT</p>
+              <h3>Raspberry Pi based Assistant</h3>
+              <p>
+                A voice assistant prototype combining speech recognition,
+                an LLM-driven tool workflow, text-to-speech, and GPIO-based
+                smart-device control.
+              </p>
+              <div class="tech-tags"><span>Raspberry Pi</span><span>Whisper</span><span>LangGraph</span><span>MCP</span><span>GPIO</span></div>
+              <div class="project-links"><a href="#contact">Discuss this project ↗</a></div>
+            </div>
+          </article>
+        </div>
+        <p id="no-projects" class="no-projects" hidden>No projects in this category yet.</p>
+      </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">MY JOURNEY</p>
+          <h2>Experience & <span>Education</span></h2>
+          <p>AI/ML engineering backed by an electronics and embedded-systems foundation.</p>
+        </div>
+
+        <div class="timeline">
+
+          <h3 class="timeline-group reveal">Experience</h3>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <p class="date">DEC 2022 — JUL 2025</p>
+              <h3>AI/ML Engineer <span class="timeline-company">· DigiTele Networks</span></h3>
+              <p class="timeline-location">Hyderabad, India</p>
+              <ul>
+                <li>Built GPU-accelerated computer vision pipelines for drone-based wind turbine inspection and multispectral (RGB and thermal) surveillance, reaching ~75-80%+ mAP.</li>
+                <li>Used Ray for distributed inference across multiple models and built SAM-based post-processing to map detections to real-world measurements.</li>
+                <li>Served models through Flask APIs and Docker, and optimized YOLOv5 for edge hardware with ONNX and INT8 quantization (~75% smaller).</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <p class="date">NOV 2018 — JUN 2019</p>
+              <h3>Trainee Engineer <span class="timeline-company">· Techniq Design Group</span></h3>
+              <p class="timeline-location">Embedded systems and electronics</p>
+              <ul>
+                <li>Worked with trainer kits, embedded C, UART/I²C/SPI interfaces, and basic PCB design using KiCad.</li>
+                <li>Gained hands-on experience in electronics, soldering, and hardware integration.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <p class="date">FEB 2017 — FEB 2018</p>
+              <h3>Diploma Engineer Trainee <span class="timeline-company">· Bharat Forge</span></h3>
+              <p class="timeline-location">Electronics assembly and testing</p>
+              <ul>
+                <li>Supported defense-electronics package assembly, ECU harness work, test jigs, and environmental testing.</li>
+                <li>Worked with applicable IPC/WHMA-A-620 harness workmanship practices.</li>
+              </ul>
+            </div>
+          </article>
+
+          <h3 class="timeline-group reveal">Education</h3>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <p class="date">2019 — 2022</p>
+              <h3>B.Tech, Electronics & Communication Engineering</h3>
+              <p class="timeline-company">MLR Institute of Technology</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <p class="date">2013 — 2016</p>
+              <h3>Diploma, Automation & Robotics Engineering</h3>
+              <p class="timeline-company">CITD</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <p class="eyebrow">LET'S BUILD SOMETHING</p>
+          <h2>Have an AI challenge in <span>mind?</span></h2>
+          <p>
+            I'm interested in AI/ML, GenAI, RAG, Computer Vision, and Edge AI
+            opportunities. Reach out to discuss a role or a project.
+          </p>
+          <div class="contact-links">
+            <!-- Replace these example values with your real links -->
+            <a class="btn btn-primary" href="pbnutalapathi@gmail.com">Email Me ↗</a>
+            <a class="btn btn-outline" href="https://www.linkedin.com/in/prashanth-bhargav" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a class="btn btn-outline" href="https://github.com/Prashanth-Bhargav" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="#home">PB<span>.</span></a>
+      <p>© <span id="current-year"></span> Prashanth Bhargav</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top" title="Back to top" hidden>↑</button>
+
+</body>
+</html>
